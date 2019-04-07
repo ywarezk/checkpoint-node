@@ -1,0 +1,15 @@
+{
+  "name": "04-express-introduction",
+  "version": "1.0.0",
+  "description": "In this lesson we will start building our server using express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

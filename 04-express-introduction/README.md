@@ -10,7 +10,9 @@ In this lesson we will start building our server using express
 - using the above patterns to solve common server problems
 
 ### Student EX
-
+- 
+- todo task: {id: 1, title: 'hello world'}
+- [{...}, {...}]
 - Create an express app that will respond to the following urls
   * /api/task/ - Will serve and create todo tasks
   * all other urls will static serve an index file
