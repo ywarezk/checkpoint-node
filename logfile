@@ -1,0 +1,7 @@
+2019-04-08 09:29:48.313 IDT [15908] LOG:  could not bind IPv6 address "::1": Permission denied
+2019-04-08 09:29:48.313 IDT [15908] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 09:29:48.313 IDT [15908] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2019-04-08 09:29:48.313 IDT [15908] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 09:29:48.313 IDT [15908] WARNING:  could not create listen socket for "localhost"
+2019-04-08 09:29:48.313 IDT [15908] FATAL:  could not create any TCP/IP sockets
+2019-04-08 09:29:48.313 IDT [15908] LOG:  database system is shut down

@@ -1,0 +1,27 @@
+2019-04-08 09:34:23.139 IDT [2964] LOG:  could not bind IPv6 address "::1": Permission denied
+2019-04-08 09:34:23.139 IDT [2964] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 09:34:23.140 IDT [2964] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2019-04-08 09:34:23.140 IDT [2964] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 09:34:23.140 IDT [2964] WARNING:  could not create listen socket for "localhost"
+2019-04-08 09:34:23.140 IDT [2964] FATAL:  could not create any TCP/IP sockets
+2019-04-08 09:34:23.140 IDT [2964] LOG:  database system is shut down
+2019-04-08 09:35:05.299 IDT [12252] LOG:  could not bind IPv6 address "::1": Permission denied
+2019-04-08 09:35:05.299 IDT [12252] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 09:35:05.300 IDT [12252] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2019-04-08 09:35:05.300 IDT [12252] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 09:35:05.300 IDT [12252] WARNING:  could not create listen socket for "localhost"
+2019-04-08 09:35:05.300 IDT [12252] FATAL:  could not create any TCP/IP sockets
+2019-04-08 09:35:05.300 IDT [12252] LOG:  database system is shut down
+2019-04-08 10:56:19.248 IDT [11452] LOG:  could not bind IPv6 address "::1": Permission denied
+2019-04-08 10:56:19.248 IDT [11452] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 10:56:19.248 IDT [11452] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2019-04-08 10:56:19.248 IDT [11452] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-08 10:56:19.248 IDT [11452] WARNING:  could not create listen socket for "localhost"
+2019-04-08 10:56:19.248 IDT [11452] FATAL:  could not create any TCP/IP sockets
+2019-04-08 10:56:19.249 IDT [11452] LOG:  database system is shut down
+2019-04-08 10:57:14.202 IDT [15692] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-08 10:57:14.203 IDT [15692] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-08 10:57:14.239 IDT [10884] LOG:  database system was shut down at 2019-04-08 09:29:21 IDT
+2019-04-08 10:57:14.360 IDT [15692] LOG:  database system is ready to accept connections
+2019-04-08 10:59:32.750 IDT [16748] FATAL:  role "checkpoint" does not exist
+2019-04-08 11:03:28.094 IDT [16684] FATAL:  role "postgres" does not exist
