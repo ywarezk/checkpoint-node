@@ -25,3 +25,12 @@
 2019-04-08 10:57:14.360 IDT [15692] LOG:  database system is ready to accept connections
 2019-04-08 10:59:32.750 IDT [16748] FATAL:  role "checkpoint" does not exist
 2019-04-08 11:03:28.094 IDT [16684] FATAL:  role "postgres" does not exist
+2019-04-08 13:04:28.737 IDT [15692] LOG:  received fast shutdown request
+2019-04-08 13:04:28.755 IDT [15692] LOG:  aborting any active transactions
+2019-04-08 13:04:28.770 IDT [15692] LOG:  background worker "logical replication launcher" (PID 11664) exited with exit code 1
+2019-04-08 13:04:28.771 IDT [11028] LOG:  shutting down
+2019-04-08 13:04:28.815 IDT [15692] LOG:  database system is shut down
+2019-04-08 13:14:11.804 IDT [10136] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-08 13:14:11.804 IDT [10136] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-08 13:14:11.842 IDT [16416] LOG:  database system was shut down at 2019-04-08 13:04:28 IDT
+2019-04-08 13:14:11.954 IDT [10136] LOG:  database system is ready to accept connections

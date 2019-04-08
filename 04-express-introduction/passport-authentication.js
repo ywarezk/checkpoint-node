@@ -28,12 +28,26 @@ passport.use(new PassportLocal(function verifyFunction(email, password, next) {
     }
 }))
 
+passport.serializeUser(function(user, done) {
+    done(null, user.id);
+});
+  
+passport.deserializeUser(function(id, done) {
+    const user = users.find((user) => user.id === id);
+    if (user) {
+        done(null, user);
+    } else {
+        done(null, false);
+    }
+});
+
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(session({
     secret: 'sadfsdf'
 }));
 app.use(passport.initialize());
+app.use(passport.session());
 
 app.route('/login')
     .get(function(req, res) {
@@ -45,7 +59,7 @@ app.route('/login')
             </form>
         `)
     })
-    .post(passport.authenticate('local', {session: false}), function(req, res) {
+    .post(passport.authenticate('local', {session: true}), function(req, res) {
         
         // in here we need to authenticate the user
         // req.user => {id: 1, email: 'yariv@nerdeez.com', password: '12345678'}
@@ -55,8 +69,14 @@ app.route('/login')
 app.get('/admin', function(req, res) {
     // go to this route
     // only if im authenticated with the session
+    if (req.user){
+        res.send('you are authenticated');
+    } else {
+        res.status(401).send('Unauthorized');
+    }
+        
 });
 
-app.listen(3000, function() {
+app.listen(3000, '0.0.0.0', function() {
     console.log('i am now listening on port 3000');
 });

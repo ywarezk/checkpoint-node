@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "JWT",
+            "program": "${workspaceFolder}/jwt-authentication.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Passport",
             "program": "${workspaceFolder}/passport-authentication.js"
         },
