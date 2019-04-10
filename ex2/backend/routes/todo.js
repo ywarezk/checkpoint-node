@@ -1,16 +1,25 @@
 const express = require('express');
+const Task = require('../models').task;
+const passport = require('passport');
 
 const todoRouter = express.Router()
 
 todoRouter.use('', passport.authenticate('jwt', {session: false}));
-todoRouter.get('', function(req, res) {
-    res.json([
-        {id: 1, title: 'aaa'},
-        {id: 2, title: 'bbb'},
-        {id: 3, title: 'ccc'},
-        {id: 4, title: 'ddd'},
-        {id: 5, title: 'eee'},
-    ])
+
+todoRouter.get('', async function(req, res) {
+    const tasks = await Task.findAll();
+    res.json(tasks);
+});
+
+todoRouter.post('', async function(req, res) {
+    const task = await Task.create(req.body);
+    res.json(task);
+});
+
+todoRouter.put('/:id', async function(req, res) {
+    const task = await Task.findByPk(req.params.id);
+    await task.save(req.body);
+    res.json(task);
 })
 
 module.exports = todoRouter;
